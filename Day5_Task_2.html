@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let json_data = `{
+          "Name":"B. Raja Mohamed",
+          "Address":"73,Lakshmi Nagar,Pudukkottai,Tamilnadu",
+          "Mobile":9443215238,
+          "E-mail":"b.rajamohamed@gmail.com",
+          "Career Objective":"To secure a dynamic role as a full-stack developer in a progressive and innovative organization, where I can leverage my skills and passion for technology to deliver high-quality solutions. I am eager to contribute my expertise in front-end and back-end development, along with my strong problem-solving abilities, to drive impactful outcomes. With a growth mindset and a dedication to continuous learning, I strive to excel in a collaborative environment, pushing boundaries and achieving remarkable results for both the company and my professional growth.",
+          "Summary":"A highly motivated and results-driven individual with a passion for excellence and a strong commitment to personal and professional development. Punctuality, enthusiasm, and a proactive mindset are key attributes that drive my success. I am eager to contribute my skills and abilities to a dynamic and forward-thinking organization, where I can make a meaningful impact and continually enhance my capabilities.",
+          "Education":[
+              {
+                  "course":"Bachelor of Technology (B.Tech) in Information Technology",
+                  "institute":"Mookambigai College of Engineering, Pudukkottai",
+                  "marks":"CGPA: 6.7",
+                  "period":"2009-2013"
+              },
+              {
+                  "course":"Higher Secondary Certificate (HSC) in Computer Science",
+                  "institute":"Sri Venkateswara Matriculation Higher Secondary School, Pudukkottai",
+                  "marks":"77%",
+                  "period":"2009"
+              },
+              {
+                  "course":"Secondary School Leaving Certificate (SSLC)",
+                  "institute":"Nirmala Matriculation School, Pudukkottai",
+                  "marks":"68%",
+                  "period":"2007"
+              }
+          ],
+          "Technical Proficiency":{
+              "Frontend":["HTML","CSS","JAVASCRIPT","VUE.JS","REACT"],
+              "Backend":["MySql","MongoDB"]
+          },
+          "Key Strengths":{
+              "Self-confident and self-motivated": "I possess a strong belief in my abilities and strive to achieve my goals with determination and motivation",
+              "Quick learner": "I have a natural aptitude for grasping new concepts and technologies, enabling me to adapt quickly to changing environments and learn new skills efficiently.",
+              "Positive attitude": "I approach challenges and tasks with a positive mindset, maintaining an optimistic outlook even in the face of obstacles. This attitude allows me to maintain motivation and inspire others around me.",
+              "Teamwork": "I am adept at working collaboratively in team settings, valuing open communication, cooperation, and the contribution of each team member towards achieving shared objectives."
+          },
+          "Personal Information":{
+              "Date of Birth": "17-June-1992",
+              "Marital Status": "Married",
+              "Nationality": "Indian",
+              "Languages Known": ["English", "Tamil"],
+              "Hobbies": ["Browsing", "playing Cricket", "simple cooking"]
+          },
+          "Declaration":"I certify that the above information is true and accurate to the best of my knowledge. I understand that any misrepresentation or omission may lead to disqualification from consideration.Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with the requirements of the position."
+
+
+      }`;
+
+      let resume = JSON.parse(json_data);
+      console.log(Object.getOwnPropertyNames(resume));
+
+      console.log(resume["Technical Proficiency"]);
+    </script>
+  </body>
+</html>

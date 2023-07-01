@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let json_data = `{
+        "name": "Raja Mohamed",
+        "age": 25,
+        "email": "b.rajamohamed@gmail.com",
+        "address": {
+          "street": "73,",
+          "city": "Lakshmi Nagar,",
+          "country": "Pudukkottai"
+        },
+        "hobbies": ["cricket", "coding", "traveling"],
+        "projects": [
+          {
+            "title": "Online Voting System",
+            "description": "Lorem ipsum dolor sit amet.",
+            "completed": true
+          },
+          {
+            "title": "Project B",
+            "description": "Calculator",
+            "completed": false
+          }
+        ]
+      }`;
+      let person = JSON.parse(json_data);
+
+      //FOR LOOP
+      console.log("FOR LOOP");
+      for (let i = 0; i < Object.keys(person).length; i++) {
+        let key = Object.keys(person)[i];
+        console.log(`${key}: ${person[key]}`);
+      }
+
+      //FOR IN
+      console.log("FOR IN");
+      for (let key in person) {
+        console.log(key, person[key]);
+      }
+
+      //FOR EACH
+      console.log("FOR EACH");
+      Object.keys(person).forEach((key) => {
+        console.log(key, person[key]);
+      });
+
+      //FOR OF
+      console.log("FOR OF");
+      for (let [key, value] of Object.entries(person)) {
+        console.log(key, value);
+      }
+    </script>
+  </body>
+</html>
